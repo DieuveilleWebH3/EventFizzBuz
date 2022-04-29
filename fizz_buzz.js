@@ -26,17 +26,17 @@ my_fizz_buzz.on("zz", function(the_number)
         {
             console.log("FizzBuzz");
         }
-        // else if(the_number % 5 == 0 ) 
-        // {
-        //     console.log("Buzz");
-        // }
-        // else if(the_number % 3 == 0 ) 
-        // {
-        //     console.log("Fizz");
-        // }
-        // else
-        // {
-        //     console.log(the_number);
-        // }
+        else if(the_number % 5 == 0 ) 
+        {
+            console.log("Buzz");
+        }
+        else if(the_number % 3 == 0 ) 
+        {
+            console.log("Fizz");
+        }
+        else
+        {
+            console.log(the_number);
+        }
     }
 );
