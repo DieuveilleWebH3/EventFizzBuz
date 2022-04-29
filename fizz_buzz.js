@@ -7,7 +7,32 @@ class Logger extends FizzBuzz
     // function to take the arg and return the approriate answer
     log(the_number)
     {
-        if(typeof(the_number) !== 'number') return "You have not entered a number";
+        // if the parameter is not a number we let the user know 
+        if(typeof(the_number) !== 'number') console.log("You have not entered a number");
+
+        // we check if the parameter is divisible both by 5 and 3
+        else if(the_number % 5 == 0 && the_number % 3 == 0 ) 
+        {
+            console.log("FizzBuzz");
+        }
+
+        // we check if the parameter is divisible by 5 
+        else if(the_number % 5 == 0 ) 
+        {
+            console.log("Buzz");
+        }
+        
+        // we check if the parameter is divisible by 3
+        else if(the_number % 3 == 0 ) 
+        {
+            console.log("Fizz");
+        }
+
+        // if the parameter is a number not divisible by 3 nor 5, we just show it
+        else
+        {
+            console.log(the_number);
+        }
     }
 
 }
