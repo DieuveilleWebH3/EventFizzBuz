@@ -20,9 +20,9 @@ const my_fizz_buzz = new FizzBuzz();
 
 my_fizz_buzz.on("zz", function(the_number) 
     {
-        if(typeof(the_number) !== 'number') return "You have not entered a number";
+        if(typeof(the_number) !== 'number') console.log("You have not entered a number");
 
-        if(the_number % 5 == 0 && the_number % 3 == 0 ) 
+        else if(the_number % 5 == 0 && the_number % 3 == 0 ) 
         {
             console.log("FizzBuzz");
         }
@@ -40,3 +40,19 @@ my_fizz_buzz.on("zz", function(the_number)
         }
     }
 );
+
+
+my_fizz_buzz.emit("zz", 'I may be a string');
+// console.log("\n");
+
+// my_fizz_buzz.emit("zz", 12);
+// console.log("\n");
+
+// my_fizz_buzz.emit("zz", 16);
+// console.log("\n");
+
+// my_fizz_buzz.emit("zz", 25);
+// console.log("\n");
+
+// my_fizz_buzz.emit("zz", 15);
+// console.log("\n");
