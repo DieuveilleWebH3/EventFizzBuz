@@ -43,16 +43,16 @@ my_fizz_buzz.on("zz", function(the_number)
 
 
 my_fizz_buzz.emit("zz", 'I may be a string');
-// console.log("\n");
+console.log("\n");
 
-// my_fizz_buzz.emit("zz", 12);
-// console.log("\n");
+my_fizz_buzz.emit("zz", 12);
+console.log("\n");
 
-// my_fizz_buzz.emit("zz", 16);
-// console.log("\n");
+my_fizz_buzz.emit("zz", 16);
+console.log("\n");
 
-// my_fizz_buzz.emit("zz", 25);
-// console.log("\n");
+my_fizz_buzz.emit("zz", 25);
+console.log("\n");
 
-// my_fizz_buzz.emit("zz", 15);
-// console.log("\n");
+my_fizz_buzz.emit("zz", 15);
+console.log("\n");
